@@ -13,4 +13,3 @@ class Libro:
     def __repr__(self):
         return f"Libro(titolo = {self.titolo}; codice isbn = {self.codice_isbn}; autore = {self.autore})"
     
-    

@@ -4,6 +4,7 @@ class Utente:
     def __init__(self, nome):
         self.nome = nome
         self.numero_tessera = random.randint(100000, 999999)
+        self.libri_in_prestito = []
 
     def __eq__(self, other):
         if not isinstance(self, other):
@@ -13,3 +14,4 @@ class Utente:
     
     def __repr__(self):
         return f"Utente(nome = {self.nome}; numero tessera = {self.numero_tessera})"
+    
